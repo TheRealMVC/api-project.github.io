@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- title/header -->
+    <center><h1>Learn a Classic</h1></center>
+   
+<!-- Html example -->
+    <json version="1.0" encoding="UTF-8"?> 
+    <NSArray> 
+      <Song type="Song" id="115"> 
+       <center> <title>Free Bird</title> </center>
+        <artist type="Artist" id="58"> 
+       <center> <nameWithoutThePrefix>Lynyrd Skynyrd</nameWithoutThePrefix>  </center>
+      </Song>
+    </NSArray>
+
+
+
+
+
+
+   <!-- on call button -->
+    <form action="">
+        <center><button id="submit">Click Me!</button></center>
+    </form>
+
+    <div>
+        <ul></ul>
+    </div>
+    <script src="./songsterapi.js"></script>
+
+    
+    <!-- Audio section -->
+    <!-- <script>
+        var audio = new Audio("http://musihttps://ia902308.us.archive.org/35/items/FreeBird_641/LynyrdSkynyrd-FreeBird.ogg" ) ;
+        
+        audio.oncanplaythrough = function(){
+        audio.play();
+        }
+        
+        audio.loop = true;
+        
+        audio.onended = function(){
+        audio.play();
+        }
+        
+        </script> -->
+
+<script>
+    function play(){
+         var audio = document.getElementById("audio");
+         audio.play();
+                   }
+     </script>
+  
+  <input type="button" value="PLAY"  onclick="play()">
+  <audio id="audio" src="http://musihttps://ia902308.us.archive.org/35/items/FreeBird_641/LynyrdSkynyrd-FreeBird.ogg" ></audio>
+
+        
+       <div>
+
+
+       </div>
+
+</body>
+</html>
